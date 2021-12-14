@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 0 1.5em;
+  padding-bottom: 15px;
+  
+}
+
+.nav-logo {
+  font-family: 'Bungee', sans-serif; 
+  font-size: 2.25em;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+.fa-angle-double-down {
+  color: red;
+}
+
+nav > span {
+
+}
