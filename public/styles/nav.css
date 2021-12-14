@@ -1,4 +1,5 @@
 nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -8,7 +9,6 @@ nav {
   color: #FFFFFF;
   padding: 0 1.5em;
   padding-bottom: 15px;
-  
 }
 
 .nav-logo {
@@ -25,8 +25,4 @@ nav {
 }
 .fa-angle-double-down {
   color: red;
-}
-
-nav > span {
-
 }
