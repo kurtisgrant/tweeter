@@ -1,0 +1,44 @@
+
+section.new-tweet {
+  padding: 0 1.5em;
+}
+
+#form_new_tweet {
+
+}
+
+#form_new_tweet > label {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#form_new_tweet > textarea {
+  width: 100%;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 4px solid grey;
+  background: inherit;
+  resize: none;
+  font-weight: bold;
+}
+
+#form_new_tweet > .below_input_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.3em;
+  font-family: 'Bungee', sans-serif; 
+}
+
+#form_new_tweet .submit {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 4px 10px;
+  outline: none;
+  border: none;
+}
+
+#form_new_tweet .counter {
+
+}
