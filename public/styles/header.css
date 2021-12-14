@@ -7,7 +7,7 @@ header {
   background-image: url('../images/elastoplast.png');
   width: 100%;
   height: 400px;
-  padding: 120px 0 0;
+  padding: 140px 0 0;
 }
 
 .header-img-container {
@@ -19,7 +19,7 @@ header {
 }
 
 .header-name-container > h2 {
-  margin: 10px 0;
+  margin: 10px 0 20px;
   color: #FFFFFF;
   font-weight: 300;
 }
