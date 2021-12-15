@@ -7,7 +7,6 @@ const renderTweets = function(arrOfTweetObjs) {
   for (const tweetObj of arrOfTweetsSorted) {
     const $tweet = createTweetElement(tweetObj);
     $tweetContainer.append($tweet);
-    $;
   }
 };
 
