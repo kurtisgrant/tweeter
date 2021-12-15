@@ -1,11 +1,8 @@
 
-section.new-tweet {
-  padding: 0 1.5em;
+.new-tweet {
+  margin-bottom: 2em;
 }
 
-#form_new_tweet {
-
-}
 
 #form_new_tweet > label {
   font-weight: bold;
