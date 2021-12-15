@@ -4,12 +4,12 @@
 }
 
 
-#form_new_tweet > label {
+#form-new-tweet > label {
   font-weight: bold;
   font-size: 1.2em;
 }
 
-#form_new_tweet > textarea {
+#form-new-tweet > textarea {
   width: 100%;
   margin-top: 15px;
   border: none;
@@ -20,7 +20,7 @@
   font-weight: bold;
 }
 
-#form_new_tweet > .below_input_container {
+#form-new-tweet > .below-input-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +28,7 @@
   font-family: 'Bungee', sans-serif; 
 }
 
-#form_new_tweet .submit {
+#form-new-tweet .submit {
   background-color: #4056A1;
   color: #FFFFFF;
   padding: 3px 12px;
@@ -36,10 +36,10 @@
   border: none;
 }
 
-#form_new_tweet .counter {
+#form-new-tweet .counter {
   color: inherit;
 }
 
-#form_new_tweet .counter.overlimit {
+#form-new-tweet .counter.overlimit {
   color: red;
 }

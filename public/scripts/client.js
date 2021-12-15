@@ -75,4 +75,23 @@ const data = [
 
 $(() => {
   renderTweets(data);
+
+  const $form = $('#form-new-tweet');
+  $form.on('submit', (event) => {
+    event.preventDefault();
+    const tweetData = $form.serialize();
+    $.ajax({
+      url: '/twees/',
+      type: 'POST',
+      data: tweetData,
+      async: true,
+      success: function() {
+        console.log('POST request successful');
+      },
+      error: function(error) {
+        console.error(`Failed to POST new tweet (Status: ${error.statusText})`);
+      }
+    });
+  });
+
 });
