@@ -40,5 +40,9 @@ section.new-tweet {
 }
 
 #form_new_tweet .counter {
+  color: inherit;
+}
 
+#form_new_tweet .counter.overlimit {
+  color: red;
 }
