@@ -81,7 +81,7 @@ $(() => {
     event.preventDefault();
     const tweetData = $form.serialize();
     $.ajax({
-      url: '/twees/',
+      url: '/tweets/',
       type: 'POST',
       data: tweetData,
       async: true,
