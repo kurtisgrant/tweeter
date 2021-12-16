@@ -40,6 +40,10 @@
   color: rgb(175, 175, 175);
 }
 
+.tweet-body {
+  word-wrap: break-word;
+}
+
 .tweet-footer {
   display: flex;
   justify-content: space-between;
