@@ -61,8 +61,12 @@
       <form id="form-new-tweet" method="post" action="/tweets/">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text" rows="2"></textarea>
-        <div class="below-input-container">
-          <button type="submit" class="submit">Tweet</button>
+        <div class="fl-between-container">
+          <div class="flex-container">
+            <button type="submit" class="submit">Tweet</button>
+            <!-- <div class="alert">That tweet was too long!</div> -->
+            <div class="alert">That all you got?</div>
+          </div>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>

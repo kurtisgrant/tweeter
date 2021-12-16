@@ -3,6 +3,17 @@
   margin-bottom: 2em;
 }
 
+.flex-container {
+  display: flex;
+}
+
+.alert {
+  background-color: rgb(222, 39, 76);
+  color: #FFFFFF;
+  height: 1.5em;
+  padding: 3px 12px;
+  margin-left: 12px;
+}
 
 #form-new-tweet > label {
   font-weight: bold;
@@ -20,7 +31,7 @@
   font-weight: bold;
 }
 
-#form-new-tweet > .below-input-container {
+#form-new-tweet > .fl-between-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +43,7 @@
   background-color: #4056A1;
   color: #FFFFFF;
   padding: 3px 12px;
+  height: 1.5em;
   outline: none;
   border: none;
 }
