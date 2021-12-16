@@ -42,6 +42,15 @@ $(() => {
   $form.on('submit', (event) => {
     event.preventDefault();
     const tweetData = $form.serialize();
+
+    // Input validation
+    const tweetText = $form.children('#tweet-text').val().trim();
+    if (!tweetText.length) {
+      return alert('Tweet text cannot be empty');
+    } else if (tweetText.length > 140) {
+      return alert('Tweet is too long');
+    }
+
     $.ajax('/tweets', { type: 'POST', data: tweetData })
       .then(function() {
         console.log('POST tweet request successful');
