@@ -22,7 +22,7 @@ const createTweetElement = function(tweetObj) {
       </div>
       <span class="handle">${user.handle}</span>
     </header>
-    <p class="tweet-body">${content.text}</p>
+    <p class="tweet-body"></p>
     <footer class="tweet-footer">
       <small>${timeago.format(timestamp)}</small>
       <div class="icon-container">
@@ -32,6 +32,7 @@ const createTweetElement = function(tweetObj) {
       </div>
     </footer>
   `);
+  $twArticle.children('p.tweet-body').text(content.text);
   return $twArticle;
 };
 
