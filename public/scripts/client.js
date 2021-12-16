@@ -2,7 +2,7 @@
 //  Client-side JS logic 
 
 const renderTweets = function(arrOfTweetObjs) {
-  const $tweetContainer = $('section.tweets');
+  const $tweetContainer = $('section.tweets').empty();
   const arrOfTweetsSorted = arrOfTweetObjs.sort((a, b) => b.created_at - a.created_at);
   for (const tweetObj of arrOfTweetsSorted) {
     const $tweet = createTweetElement(tweetObj);
@@ -55,6 +55,7 @@ $(() => {
       .then(function() {
         console.log('POST tweet request successful');
       })
+      .then(loadTweets())
       .catch(function(error) {
         console.error(`Failed to POST new tweet (Status: ${error.statusText})`);
       });
