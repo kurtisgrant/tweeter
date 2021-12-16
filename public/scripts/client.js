@@ -74,24 +74,33 @@ const data = [
 ];
 
 $(() => {
-  renderTweets(data);
 
+  // Handle new tweet form submission POST req
   const $form = $('#form-new-tweet');
   $form.on('submit', (event) => {
     event.preventDefault();
     const tweetData = $form.serialize();
-    $.ajax({
-      url: '/tweets/',
-      type: 'POST',
-      data: tweetData,
-      async: true,
-      success: function() {
-        console.log('POST request successful');
-      },
-      error: function(error) {
+    $.ajax('/tweets', { type: 'POST', data: tweetData })
+      .then(function() {
+        console.log('POST tweet request successful');
+      })
+      .catch(function(error) {
         console.error(`Failed to POST new tweet (Status: ${error.statusText})`);
-      }
-    });
+      });
   });
 
-});
+  // Handle GET tweets req
+  const loadTweets = function() {
+    $.ajax('/tweets', { type: 'GET' })
+      .then(function(tweets) {
+        console.log('GET tweets request successful');
+        renderTweets(tweets);
+      })
+      .catch(function(error) {
+        console.error(`Failed to GET tweets (Status: ${error.statusText})`);
+      });
+  };
+
+  loadTweets();
+
+});;
