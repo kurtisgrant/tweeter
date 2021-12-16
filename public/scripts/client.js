@@ -36,6 +36,22 @@ const createTweetElement = function(tweetObj) {
   return $twArticle;
 };
 
+const clearAlert = () => {
+  $alert.removeClass('show');
+  setTimeout(() => $alert.empty(), 550);
+};
+
+const custAlert = function(mainMsg, smMsg) {
+  $alert = $('.alert');
+  $alert.append($('<span>').text(mainMsg));
+  if (smMsg) {
+    $alert.append($('<small>').text(smMsg));
+  }
+  $alert.addClass('show');
+  setTimeout(() => clearAlert(), 5000);
+
+};
+
 $(() => {
 
   // Handle new tweet form submission POST req
@@ -45,18 +61,18 @@ $(() => {
     const tweetData = $form.serialize();
 
     // Input validation
-    const tweetText = $form.children('#tweet-text').val().trim();
+    const tweetText = $form.children('#tweet-text').val();
     if (!tweetText.length) {
-      return alert('Tweet text cannot be empty');
+      return custAlert('That all you got?', "(Tweets can't be empty)");
     } else if (tweetText.length > 140) {
-      return alert('Tweet is too long');
+      return custAlert('Too Long!');
     }
 
     $.ajax('/tweets', { type: 'POST', data: tweetData })
       .then(function() {
-        console.log('POST tweet request successful');
+        clearAlert();
+        loadTweets();
       })
-      .then(loadTweets())
       .catch(function(error) {
         console.error(`Failed to POST new tweet (Status: ${error.statusText})`);
       });

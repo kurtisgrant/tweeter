@@ -7,12 +7,32 @@
   display: flex;
 }
 
+.alert-container {
+  overflow: hidden;
+}
+
+.alert > small {
+  font-size: 0.6em;
+  font-style: italic;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  margin-left: 0.8em;
+}
+
 .alert {
+  display: flex;
+  align-items: center;
   background-color: rgb(222, 39, 76);
   color: #FFFFFF;
   height: 1.5em;
-  padding: 3px 12px;
-  margin-left: 12px;
+  padding: 4px 1.2em;
+  transition: all 0.5s 0s ease-in-out;
+  transform-origin: 0% 50%;
+  transform: translateX(-101%);
+}
+
+.alert.show {
+  transform: translateX(0);
 }
 
 #form-new-tweet > label {
@@ -35,6 +55,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.1em;
   margin-top: .5em;
   font-family: 'Bungee', sans-serif; 
 }
@@ -42,7 +63,7 @@
 #form-new-tweet .submit {
   background-color: #4056A1;
   color: #FFFFFF;
-  padding: 3px 12px;
+  padding: 4px 12px;
   height: 1.5em;
   outline: none;
   border: none;
