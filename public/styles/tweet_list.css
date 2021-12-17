@@ -2,13 +2,21 @@
 
 .tweets > article {
   border: 4px solid grey;
+  background-color: #FBFBFB;
   padding: 1em;
   margin-bottom: 1.5em;
 }
 
 .tweets > article:hover {
-  box-shadow: 4px 4px 0 rgb(182, 182, 182);
+  box-shadow: 3px 3px 0 rgba(120, 120, 120, 0.5);
+  border: 4px solid #4056A1;
+  background-color: #FFFFFF;
 }
+
+.tweets > article:hover > .tweet-footer {
+  border-top: 4px solid #4056A1;
+}
+
 
 .tweet-header {
   display: flex;

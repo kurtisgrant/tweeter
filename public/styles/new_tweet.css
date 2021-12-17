@@ -29,18 +29,19 @@
   transition: all 0.5s 0s ease-in-out;
   transform-origin: 0% 50%;
   transform: translateX(-101%);
+  z-index: 1;
 }
 
 .alert.show {
   transform: translateX(0);
 }
 
-#form-new-tweet > label {
+#new-tweet-form > label {
   font-weight: bold;
   font-size: 1.2em;
 }
 
-#form-new-tweet > textarea {
+#new-tweet-form > textarea {
   width: 100%;
   margin-top: 15px;
   border: none;
@@ -51,7 +52,7 @@
   font-weight: bold;
 }
 
-#form-new-tweet > .fl-between-container {
+#new-tweet-form > .fl-between-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,19 +61,26 @@
   font-family: 'Bungee', sans-serif; 
 }
 
-#form-new-tweet .submit {
+#new-tweet-form .submit {
   background-color: #4056A1;
   color: #FFFFFF;
   padding: 4px 12px;
   height: 1.5em;
   outline: none;
   border: none;
+  z-index: 2;
 }
 
-#form-new-tweet .counter {
+
+#new-tweet-form .submit:hover {
+  background-color: #4e65b0;
+  box-shadow: 3px 3px 0 rgba(120, 120, 120, 0.5);
+}
+
+#new-tweet-form .counter {
   color: inherit;
 }
 
-#form-new-tweet .counter.overlimit {
+#new-tweet-form .counter.overlimit {
   color: red;
 }

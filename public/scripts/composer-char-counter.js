@@ -15,7 +15,7 @@ $(document).ready(function() {
     }
   };
   updateCharCountAndOverlimitClass($textarea, $counter);
-  $textarea.on('input', function(event) {
+  $textarea.on('input change', function(event) {
     updateCharCountAndOverlimitClass($textarea, $counter);
   });
 });
