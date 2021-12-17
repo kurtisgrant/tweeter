@@ -4,6 +4,11 @@ Tweeter is a simple, single-page Twitter clone.
 
 This project, an assignment for [Lighthouse Labs](https://www.lighthouselabs.ca/), was created to demonstrate an understanding of front-end tools such as: HTML, CSS, JS, jQuery and AJAX, as well as Node and Express skills on the back-end.
 
+## Final Product
+| | |
+| -------- | -------- |
+| ![](https://media.giphy.com/media/oq5v4Dlle37Pdkdp1U/giphy.gif) | ![](https://media.giphy.com/media/SNOsoHlgAgC3ubvjeS/giphy.gif) | 
+
 ## Getting Started
 
 1. Install dependencies using the `npm install` command.
