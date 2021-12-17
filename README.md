@@ -7,7 +7,7 @@ This project, an assignment for [Lighthouse Labs](https://www.lighthouselabs.ca/
 ## Final Product
 | | |
 | -------- | -------- |
-| ![](https://media.giphy.com/media/oq5v4Dlle37Pdkdp1U/giphy.gif) | ![](https://media.giphy.com/media/SNOsoHlgAgC3ubvjeS/giphy.gif) | 
+| ![](https://media.giphy.com/media/vWKGxgCp3fRZVrwZjX/giphy.gif) | ![](https://media.giphy.com/media/SNOsoHlgAgC3ubvjeS/giphy.gif) | 
 
 ## Getting Started
 
