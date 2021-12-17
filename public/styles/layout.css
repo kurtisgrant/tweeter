@@ -21,13 +21,21 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+main {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  background-color: inherit;
+}
 
- main {
-   width: 90%;
-   margin: 0 auto;
-   padding: 0 1.5em;
-   background-color: inherit;
- }
+@media (min-width: 1024px) {
+  .responsive-container {
+    display: flex;
+  }
+  main {
+    flex-shrink: 1;
+    margin-left: 0;
+    padding: 0 2em;
+    margin-top: 180px;
+  }
+}
