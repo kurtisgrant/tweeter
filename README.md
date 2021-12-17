@@ -27,7 +27,7 @@ This project, an assignment for [Lighthouse Labs](https://www.lighthouselabs.ca/
 
 ## Sample Code
 
-This project was built from a [template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) provided by Lighthouse Labs therefore not all code was written by this repo's author.
+This project was built from a [template](https://github.com/lighthouse-labs/tweeter) provided by Lighthouse Labs therefore not all code was written by this repo's author.
 
 Below you'll find a links to some of the files/directories which **were** written by [@kurtisgrant](https://github.com/kurtisgrant)
 
