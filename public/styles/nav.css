@@ -25,9 +25,6 @@ nav {
   color: white;
   text-decoration: none;
 }
-.fa-angle-double-down {
-  color: red;
-}
 
 @media (min-width: 1024px) {
   nav {

@@ -72,10 +72,25 @@ $(() => {
   };
 
 
+  // Form Toggle
+  const $newTweetSection = $('.new-tweet').hide();
+  const $textarea = $('#tweet-text');
+  const $formToggle = $('#form-toggle');
+  $formToggle.click(function(event) {
+    event.preventDefault();
+    if ($newTweetSection.is(':hidden')) {
+      $newTweetSection.slideDown();
+      $textarea.focus();
+    } else {
+      $newTweetSection.slideUp();
+      $textarea.blur();
+    }
+  });
+
+
   // POST net tweet if validation passes
   const $newTweetForm = $('#new-tweet-form');
   const submitNewTweet = (event) => {
-    const $textarea = $('#tweet-text');
     event.preventDefault();
 
     // Input validation
@@ -92,6 +107,7 @@ $(() => {
       .then(function() {
         clearAlert();
         // Clear textarea, blur & trigger change to update character count
+        $newTweetSection.slideUp();
         $textarea.val('').trigger('blur').trigger('change');
         loadTweets();
       })
@@ -99,6 +115,7 @@ $(() => {
         console.error(`Failed to POST new tweet (Status: ${error.statusText})`);
       });
   };
+
 
 
   // New tweet form listeners
